@@ -47,14 +47,14 @@ const products: Product[] = [
 ]
 
 export default function Products() {
-  const { addToCart, getTotalItems } = useCart()
+  const { addToCart, getCartTotal } = useCart()
 
   return (
     <div>
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold text-gray-900">Products</h1>
         <div className="bg-indigo-600 text-white px-4 py-2 rounded-full">
-          {getTotalItems()} items in cart
+          {getCartTotal()} items in cart
         </div>
       </div>
 

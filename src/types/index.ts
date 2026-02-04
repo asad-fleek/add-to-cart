@@ -18,4 +18,5 @@ export interface CartContextType {
   clearCart: () => void
   getCartTotal: () => number
   getCartItemsCount: () => number
+  
 }
